@@ -1,0 +1,56 @@
+
+#going {
+    margin-top: 105px;
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.keep {
+    position: relative;
+    margin-top: 7%;
+    cursor:pointer;
+    border:none;
+    width:250px;
+    height:250px;
+    margin-left: 79%;
+    /* background-size: cover; */
+    background:url("https://i.pinimg.com/originals/24/e7/59/24e75930a8f463192dadb16fe58bdf29.jpg");
+    cursor: pointer;
+}
+
+.keep:hover {
+    filter: brightness(70%);
+}
+
+#imgbg:before {
+    height: 100%;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0.7;
+    background-image: url('https://www.minethatcraft.com/wp-content/uploads/2019/10/Open-Grass-Lower-resource-pack-for-Minecraft-screenshot-3.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+
+#seedt {
+    position: relative;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+#des {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 30px;
+    font-weight: 600;
+}
