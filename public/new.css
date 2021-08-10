@@ -1,0 +1,24 @@
+.ingrow {
+    width: 30%;
+    margin: 40px auto;
+}
+
+#title {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.cate-group {
+    width: 46% !important;
+    margin-bottom: 15px;
+    margin-right: 13px;
+}
+
+.ver {
+    margin-bottom: 30px;
+}

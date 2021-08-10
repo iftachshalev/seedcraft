@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <script src="newSeed.js"></script>
+        <link rel="stylesheet" href="new.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://kit.fontawesome.com/1ce788f167.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Hello, world!</title>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 id="title">Create a New seed</h1>
+        
+            <div class="ingrow">
+                <form action="/seeds" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="seed" placeholder="seed" class="form-cont27rol">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" name="des" placeholder="description"></textarea>
+                    </div>
+                    <div class="form-group" id="cat">
+                        <script>
+                            for(let i = 0; i < 4; i++) {
+                                document.getElementById("cat").innerHTML += '\
+                                <div class="btn-group cate-group">\
+                                    <input type="text" class="categ form-control" name="category" placeholder="category">\
+                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">\
+                                        <span class="visually-hidden">Toggle Dropdown</span>\
+                                    </button>\
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">\
+                                        <li><a class="dropdown-item" href="#" id="' + i + '0" onclick="categSet(this.id)">speedrun</a></li>\
+                                        <li><a class="dropdown-item" href="#" id="' + i + '1" onclick="categSet(this.id)">broken</a></li>\
+                                        <li><a class="dropdown-item" href="#" id="' + i + '2" onclick="categSet(this.id)">survival</a></li>\
+                                        <li><a class="dropdown-item" href="#" id="' + i + '3" onclick="categSet(this.id)">spawn</a></li>\
+                                    </ul>\
+                                </div>'
+                            };
+                        </script>
+                    </div>
+                    <div class="btn-group ver">
+                        <input type="text" class="categ form-control" placeholder="version">
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                            <li><a class="dropdown-item" href="#" id="0" onclick="categSet(this.id)">1.17.1</a></li>
+                            <li><a class="dropdown-item" href="#" id="1" onclick="categSet(this.id)">1.16.5</a></li>
+                            <li><a class="dropdown-item" href="#" id="2" onclick="categSet(this.id)">1.8.9</a></li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <button class=" btn btn-lg btn-primary btn-block"><b>Submit!</b></button>
+                    </div>
+                </form>
+                <a href="/seeds" class=" btn btn-lg btn-danger"><b>Go Back</b></a>
+            </div>
+        
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    </body>
+</html>

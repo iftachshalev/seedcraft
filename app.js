@@ -24,6 +24,10 @@ app.get("/seeds", (req, res) => {
   res.render("seeds")
 })
 
+app.get("/new", (req, res) => {
+  res.render("new")
+})
+
 app.listen(port, () => {
   console.log(`seedcraft is runing...2346798734798`)
 })
